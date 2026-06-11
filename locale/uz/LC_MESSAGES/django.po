@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Bunday katta litrlarda suv sotilmaydi"
+msgstr "Bunday katta litrlarda suv sotilmaydi"
+
+msgid "Qarzingiz juda ko'p, buyurtma qilolmaysiz!"
+msgstr "Qarzingiz juda ko'p, buyurtma qilolmaysiz!"
+
+msgid "Yoshingiz mos kelmaydi"
+msgstr "Yoshingiz mos kelmaydi"
+
+msgid "Suv"
+msgstr "Suv"
+
+msgid "Mijoz"
+msgstr "Mijoz"
+
+msgid "Buyurtma"
+msgstr "Buyurtma"
+
+msgid "Haydovchi"
+msgstr "Haydovchi"

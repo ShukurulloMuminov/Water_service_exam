@@ -1,6 +1,6 @@
 from rest_framework import serializers
+from django.utils.translation import gettext_lazy as _
 from .models import Admin, Suv, Mijoz, Haydovchi, Buyurtma
-
 
 
 class SuvSerializer(serializers.ModelSerializer):
@@ -9,9 +9,8 @@ class SuvSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def validate_litr(self, value):
-
         if value > 19:
-            raise serializers.ValidationError("Bunday katta litrlarda suv sotilmaydi")
+            raise serializers.ValidationError(_("Bunday katta litrlarda suv sotilmaydi"))
         return value
 
 
@@ -19,7 +18,6 @@ class MijozSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mijoz
         fields = '__all__'
-
 
 
 class HaydovchiSerializer(serializers.ModelSerializer):
@@ -31,15 +29,12 @@ class HaydovchiSerializer(serializers.ModelSerializer):
 class AdminSerializer(serializers.ModelSerializer):
     class Meta:
         model = Admin
-
         fields = ['id', 'username', 'first_name', 'last_name', 'yosh', 'ish_vaqti', 'email']
 
     def validate_yosh(self, value):
-
         if value < 19:
-            raise serializers.ValidationError("Yoshingiz mos kelmaydi")
+            raise serializers.ValidationError(_("Yoshingiz mos kelmaydi"))
         return value
-
 
 
 class BuyurtmaSerializer(serializers.ModelSerializer):
@@ -54,7 +49,5 @@ class BuyurtmaSerializer(serializers.ModelSerializer):
     def validate(self, data):
         mijoz = data.get('mijoz')
         if mijoz and mijoz.qarz > 500000:
-            raise serializers.ValidationError(
-                "Qarzingiz juda ko'p, buyurtma qilolmaysiz!"
-            )
+            raise serializers.ValidationError(_("Qarzingiz juda ko'p, buyurtma qilolmaysiz!"))
         return data

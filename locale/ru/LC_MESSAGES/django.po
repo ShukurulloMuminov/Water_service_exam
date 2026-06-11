@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Bunday katta litrlarda suv sotilmaydi"
+msgstr "Вода в таких больших объёмах не продаётся"
+
+msgid "Qarzingiz juda ko'p, buyurtma qilolmaysiz!"
+msgstr "Ваш долг слишком большой, заказ невозможен!"
+
+msgid "Yoshingiz mos kelmaydi"
+msgstr "Ваш возраст не подходит"
+
+msgid "Suv"
+msgstr "Вода"
+
+msgid "Mijoz"
+msgstr "Клиент"
+
+msgid "Buyurtma"
+msgstr "Заказ"
+
+msgid "Haydovchi"
+msgstr "Водитель"
